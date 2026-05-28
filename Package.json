@@ -1,0 +1,40 @@
+{
+  "name": "bjve-studio",
+  "version": "1.0.0",
+  "description": "Official Desktop IDE for the Bjve Scripting Language Engine",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [
+    "bjve",
+    "ide",
+    "editor",
+    "electron",
+    "luau",
+    "opendraw"
+  ],
+  "author": "Jergan Studio",
+  "license": "MIT",
+  "dependencies": {
+    "monaco-editor": "^0.52.0"
+  },
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.jerganstudio.bjvestudio",
+    "productName": "BJVE Studio",
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  }
+}
